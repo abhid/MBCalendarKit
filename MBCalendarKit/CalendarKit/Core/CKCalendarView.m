@@ -387,15 +387,17 @@
             
             /* STEP 5: Show event dots */
             
-            if([[self dataSource] respondsToSelector:@selector(calendarView:eventsForDate:)])
-            {
-                BOOL showDot = ([[[self dataSource] calendarView:self eventsForDate:workingDate] count] > 0);
-                [cell setShowDot:showDot];
-            }
-            else
-            {
-                [cell setShowDot:NO];
-            }
+//            if([[self dataSource] respondsToSelector:@selector(calendarView:eventsForDate:)])
+//            {
+//                BOOL showDot = ([[[self dataSource] calendarView:self eventsForDate:workingDate] count] > 0);
+//                [cell setShowDot:showDot];
+//            }
+//            else
+//            {
+//                [cell setShowDot:NO];
+//            }
+            // Turn off event dots
+            [cell showDot:NO];
             
             /* STEP 6: Set the index */
             [cell setIndex:cellIndex];
