@@ -397,7 +397,7 @@
 //                [cell setShowDot:NO];
 //            }
             // Turn off event dots
-            [cell showDot:NO];
+            [cell setShowDot:NO];
             
             /* STEP 6: Set the index */
             [cell setIndex:cellIndex];
